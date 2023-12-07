@@ -7,12 +7,7 @@ let selectedRecipe = null;
 
 searchInput.addEventListener('input', search);
 
-// document.querySelector('form').addEventListener('submit', (e) => {
-//     e.preventDefault();
-//     search();
-// });
-
-// ---------------------------------------------------------------------------------------------------------------------
+// --------------------------------------------------------------------------------------
 function search() {
     // Gauname įvesto teksto reikšmę
     let searchTerm = searchInput.value.trim();
@@ -44,15 +39,6 @@ function search() {
 function displayResults(meals) {
     // Išvalome senus rezultatus
     searchResults.innerHTML = '';
-
-            // Tikriname, ar gauti receptai
-    // if (!meals || meals.length === 0) {
-    //     const noResultsMessage = document.createElement('div');
-    //     noResultsMessage.classList.add('alert', 'alert-warning');
-    //     noResultsMessage.textContent = 'This recipe is not exist.';
-    //     searchResults.appendChild(noResultsMessage);
-    //     return;
-    // }
 
     // Įdedame naujus rezultatus į HTML
     for (let i = 0; i < meals.length; i++) {     
