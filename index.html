@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c3e5ec22ca.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recipies</title>
+</head>
+<body>
+    <!-- Header two icon -->
+    <header class="container d-flex justify-content-between fs-1 mt-4 mb-5">
+        <!-- Icon first -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+            <g clip-path="url(#clip0_1_22)">
+              <path d="M1.45833 8.74994H33.5417C33.9284 8.74994 34.2994 8.5963 34.5729 8.32281C34.8464 8.04932 35 7.67839 35 7.29161C35 6.90484 34.8464 6.53391 34.5729 6.26042C34.2994 5.98693 33.9284 5.83328 33.5417 5.83328H1.45833C1.07156 5.83328 0.700627 5.98693 0.427136 6.26042C0.153645 6.53391 0 6.90484 0 7.29161C0 7.67839 0.153645 8.04932 0.427136 8.32281C0.700627 8.5963 1.07156 8.74994 1.45833 8.74994Z" fill="#FF6433"/>
+              <path d="M25.875 17H1.125C0.826631 17 0.540483 17.158 0.329505 17.4393C0.118526 17.7206 0 18.1022 0 18.5C0 18.8978 0.118526 19.2794 0.329505 19.5607C0.540483 19.842 0.826631 20 1.125 20H25.875C26.1734 20 26.4595 19.842 26.6705 19.5607C26.8815 19.2794 27 18.8978 27 18.5C27 18.1022 26.8815 17.7206 26.6705 17.4393C26.4595 17.158 26.1734 17 25.875 17Z" fill="#FF6433"/>
+              <path d="M16.2917 29H0.708333C0.520472 29 0.340304 29.158 0.207466 29.4393C0.0746278 29.7206 0 30.1022 0 30.5C0 30.8978 0.0746278 31.2794 0.207466 31.5607C0.340304 31.842 0.520472 32 0.708333 32H16.2917C16.4795 32 16.6597 31.842 16.7925 31.5607C16.9254 31.2794 17 30.8978 17 30.5C17 30.1022 16.9254 29.7206 16.7925 29.4393C16.6597 29.158 16.4795 29 16.2917 29Z" fill="#FF6433"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_1_22">
+                <rect width="35" height="35" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+          <!-- Icon second -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="29" height="34" viewBox="0 0 29 34" fill="none">
+            <g clip-path="url(#clip0_2_21)">
+              <path d="M14.4998 34C16.7861 34 18.6407 32.0975 18.6407 29.75H10.3589C10.3589 32.0975 12.2135 34 14.4998 34ZM28.4425 24.0583C27.1918 22.6797 24.8518 20.6059 24.8518 13.8125C24.8518 8.65273 21.3252 4.52227 16.5699 3.50891V2.125C16.5699 0.951602 15.643 0 14.4998 0C13.3566 0 12.4297 0.951602 12.4297 2.125V3.50891C7.67444 4.52227 4.14784 8.65273 4.14784 13.8125C4.14784 20.6059 1.80777 22.6797 0.557144 24.0583C0.168751 24.4866 -0.00343599 24.9986 -0.000199386 25.5C0.00692115 26.5891 0.840024 27.625 2.0777 27.625H26.9219C28.1596 27.625 28.9933 26.5891 28.9998 25.5C29.003 24.9986 28.8309 24.486 28.4425 24.0583Z" fill="#FF6433"/>
+              <circle cx="24.5" cy="25.5" r="4.5" fill="#FF0000"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_2_21">
+                <rect width="29" height="34" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+    </header>
+    <!-- Main container -->
+    <main class="container">
+        <!-- Search -->
+        <div class="search">
+        <form>
+            <i class="fa-solid fa-magnifying-glass" ></i>
+            <!-- Forma -->
+            <input type="text" id="searchInput" list="recipe" placeholder=" Search for a recipe...">
+            <datalist id="recipe">
+                <option selected disabled>Search for a recipe</option>
+            </datalist>    
+        </form>
+        </div>
+        <!-- Category -->
+        <h1 class="category mt-5 mb-3">Category</h1>
+        <!-- Links to categories -->
+        <div class="links">
+        <!-- Pridedamos nuorodos is JS -->
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mt-3 mb-5" id="searchResults"></div>
+            <!-- Ikeliama card is JavaScript/ app.js -->
+          </main>  
+            <!-- Kitas puslapis -->
+            <section>
+              <div class="container d-flex justify-content-between mt-3 mb-5">
+                  <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47" fill="none">
+                      <circle cx="23.5" cy="23.5" r="23.5" fill="#FF6433"/>
+                      <path d="M27 15L19 23L27 31" stroke="#FFE5DD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </div>
+                  <div>
+                      <i class="fa-solid fa-heart"></i>
+                  </div>
+              </div>
+            
+          <div class="container">
+              <div class="container-main mb-5">
+                  <img class="card-img" src="img/5.jpeg" alt="Recipe Image" id="recipeImage">
+                  <div class="overlay">
+                  <h2 class="mb-md-5" id="recipeTitle"> Title</h2>
+                  
+                  <div class="row">
+                      <div class="col-md-4"></div>
+                      <!-- Link/button -->
+                      <div class="col-md-4 watch">
+                          <a class="btn btn-one fw-bold" href="#" role="button">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 14 14" fill="none">
+                                  <g clip-path="url(#clip0_6_193)">
+                                    <path d="M11.9537 4.64885L6.38984 0.569019C5.95527 0.250802 5.44107 0.0591344 4.90424 0.0152622C4.36741 -0.02861 3.82891 0.0770267 3.34845 0.320463C2.86798 0.563899 2.4643 0.935626 2.18216 1.39444C1.90002 1.85325 1.75044 2.38123 1.75 2.91985V11.0836C1.74917 11.6228 1.89796 12.1516 2.17983 12.6112C2.4617 13.0708 2.86559 13.4431 3.34652 13.6868C3.82746 13.9305 4.36659 14.0359 4.9039 13.9913C5.4412 13.9468 5.9556 13.754 6.38984 13.4344L11.9537 9.3546C12.3229 9.08367 12.6231 8.72963 12.83 8.32111C13.0369 7.9126 13.1447 7.46111 13.1447 7.00319C13.1447 6.54526 13.0369 6.09377 12.83 5.68526C12.6231 5.27675 12.3229 4.9227 11.9537 4.65177V4.64885Z" fill="url(#paint0_linear_6_193)"/>
+                                  </g>
+                                  <defs>
+                                    <linearGradient id="paint0_linear_6_193" x1="2.86756" y1="-2.13267" x2="15.7768" y2="-1.23961" gradientUnits="userSpaceOnUse">
+                                      <stop stop-color="#F89B29"/>
+                                      <stop offset="1" stop-color="#FF0F7B"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_6_193">
+                                      <rect width="14" height="14" fill="white"/>
+                                    </clipPath>
+                                  </defs>
+                                </svg> Watch the video</a>
+                          </div>
+                      <div class="col-md-4"></div>
+                  </div>
+                  </div>
+              </div>
+              <!-- Mygtukai -->
+              <div class="row">
+                <div class="col">
+                    <a href="#" class="btn btn-lg ingredients-btn" type="button" id="ingredientsButton">Ingredients</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="btn btn-lg details-btn" type="button" id="detailsButton">Details</a>
+                </div>
+            
+                <div class="resultDetail" id="searchResultsOn">
+                    <div class="recipe-details" id="recipeDetailsSection">
+                        <!-- Rezultatas iš JS bus įdėtas čia -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container" id="recipeIngredientsSection">
+                <div id="recipeDetails">
+                    <!-- Iterpimas is JS -->
+                </div>
+                <h2 class="mt-5" id="itemCount"></h2>
+                <div class="items">
+                    <div class="list-unstyled" id="recipeIngredients">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+          </section>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/app.js"></script>
+</body>
+</html>
